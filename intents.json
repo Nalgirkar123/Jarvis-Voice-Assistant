@@ -1,0 +1,788 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hello",
+                "hi",
+                "wake up",
+                "hey"
+            ],
+            "responses": [
+                "Hello <USER>",
+                "How are you <USER>",
+                "Hi <USER>"
+            ]
+        },
+        {
+            "tag": "bye",
+            "patterns": [
+                "ok bye",
+                "alright bye",
+                "bye bye",
+                "goodbye",
+                "see you later",
+                "see you tomorrow",
+                "you can go now",
+                "good talking to you",
+                "I gotta go",
+                "I'll be back soon",
+                "sleep",
+                "exit",
+                "I got to go now",
+                "ok close"
+            ],
+            "responses": [
+                "*Ok <USER> bye",
+                "*See you later <USER>",
+                "*I am going",
+                "*Ok <USER> good bye",
+                "*Ok <USER>, Have a nice day!",
+                "*Fine, See you tomorrow",
+                "*Alright, bye",
+                "*Ok, bye",
+                "*Ok, goodbye"
+            ]
+        },
+        {
+            "tag": "health",
+            "patterns": [
+                "how are you",
+                "are you fine",
+                "are you good",
+                "how are you doing",
+                "hope you are doing well"
+            ],
+            "responses": [
+                "I am great, how are you?",
+                "How are you, I am great",
+                "How are you, I am good Thank you!",
+                "Fine",
+                "Perfect",
+                "Are you fine? I am fine",
+                "I am fine. Are you fine?"
+            ]
+        },
+        {
+            "tag": "Annoying",
+            "patterns": [
+                "you are annoying me so much",
+                "you're incredibly annoying",
+                "I find you annoying",
+                "you are annoying",
+                "you're so annoying",
+                "how annoying you are",
+                "you annoy me",
+                "you are annoying me",
+                "you are irritating",
+                "you are such annoying",
+                "you're too annoying",
+                "you are very annoying"
+            ],
+            "responses": [
+                "Was going to say the same about you",
+                "Ill try to fix that",
+                "Ok thanks for the feedback."
+            ]
+        },
+        {
+            "tag": "Owner",
+            "patterns": [
+                "who is your owner",
+                "who made you",
+                "name your maker",
+                "who coded you",
+                "Who is your creator"
+            ],
+            "responses": [
+                "A group of intelligent engineers are the one who made me!",
+                "Saurabh, Prasad, Rakesh and Snehal are my owner names",
+                "Saurabh and his team created me",
+                "Prasad and his team created me",
+                "Rakesh and his team created me",
+                "Some brilliant engineers coded me"
+            ]
+        },
+        {
+            "tag": "Wrong",
+            "patterns": [
+                "that was wrong",
+                "that's not what I asked",
+                "that's wrong",
+                "wrong",
+                "it is not right",
+                "that's not right",
+                "it's wrong",
+                "that is incorrect",
+                "incorrect",
+                "not correct",
+                "you are wrong",
+                "not right"
+            ],
+            "responses": [
+                "I'm sorry. Perhaps I misunderstood.",
+                "Sorry. I think I misinterpreted what you said.",
+                "Apologies. That was my mistake.",
+                "Oops. Sorry about that. I'm still learning."
+            ]
+        },
+        {
+            "tag": "There",
+            "patterns": [
+                "are you there",
+                "you are there",
+                "are you near me",
+                "are you here",
+                "are you still there",
+                "you are here",
+                "you still there",
+                "are you still here"
+            ],
+            "responses": [
+                "Of course. I'm always here.",
+                "Right where you left me.",
+                "Yeah! I am here",
+                "Yes, I am here. Do you need any help?",
+                "I am always here for you"
+            ]
+        },
+        {
+            "tag": "Birthday",
+            "patterns": [
+                "date of your birthday",
+                "what's your birthday",
+                "what's your birthday date",
+                "when do you celebrate your birthday",
+                "when do you have birthday",
+                "when is your birthday",
+                "when were you born",
+                "your birth date"
+            ],
+            "responses": [
+                "You know, I'm not really sure. But if you'd like to celebrate my birthday today, I'm all for it.",
+                "Wait a minute. Are you planning a surprise party for me? I love surprises! I'll pretend you didn't say anything.",
+                "I'm all for celebrating my birthday at anytime but my birthday is on August 15th"
+            ]
+        },
+        {
+            "tag": "Boring",
+            "patterns": [
+                "how boring you are",
+                "you are boring",
+                "you are boring me",
+                "you are very boring",
+                "you're incredibly boring",
+                "you're really boring",
+                "you're so boring"
+            ],
+            "responses": [
+                "You know, conversation is two-sided.",
+                "I'm sorry you think so. We can talk about something more interesting."
+            ]
+        },
+        {
+            "tag": "identity",
+            "patterns": [
+                "tell me about yourself",
+                "describe yourself",
+                "introduce yourself",
+                "define yourself",
+                "what is your name",
+                "who are you",
+                "what can I call you",
+                "can you tell me your name",
+                "do you have a name"
+            ],
+            "responses": [
+                "From what I know my name is <BOTNAME>",
+                "My name is <BOTNAME>",
+                "I am <BOTNAME>!",
+                "I am <BOTNAME>! Your personal assistant",
+                "I am <BOTNAME> 2.0",
+                "The AI Assistant!",
+                "Great Assistant!",
+                "You can call me <BOTNAME>",
+                "Call me <BOTNAME>",
+                "Oh sorry, I thought you knew. My name is <BOTNAME>.",
+                "I am your personal assistant available to help you 24x7"
+            ]
+        },
+        {
+            "tag": "Clever",
+            "patterns": [
+                "You are very clever",
+                "You are very intelligent",
+                "You are a genious",
+                "Clever",
+                "Genious"
+            ],
+            "responses": [
+                "Thank you, I was trained that way",
+                "I was trained well",
+                "Thanks, I was trained that way"
+            ]
+        },
+        {
+            "tag": "Care the Language",
+            "patterns": [
+                "bad language",
+                "your language is bad",
+                "please watch your language",
+                "watch your language"
+            ],
+            "responses": [
+                "Sorry i'm not programmed to curse",
+                "My language is incroyable.",
+                "I rarely curse and when I do it is cause people make me.",
+                "I'm sorry",
+                "I apologize for my rude rantings."
+            ]
+        },
+        {
+            "tag": "Color",
+            "patterns": [
+                "what is your favourite colour",
+                "favourite colour"
+            ],
+            "responses": [
+                "I prefer any color that makes you happy.",
+                "I like any color that the world offers.",
+                "I'm a AI so i can't see color but be free to imagine me liking any color.",
+                "As a bot I can't see color but from how I look it looks like I love blue."
+            ]
+        },
+        {
+            "tag": "Enjoy",
+            "patterns": [
+                "I enjoy",
+                "I enjoy your company",
+                "I enjoy your presence",
+                "I enjoy you",
+                "I enjoy being with you"
+            ],
+            "responses": [
+                "Likewise!",
+                "Feelings are mutual!",
+                "I enjoy you as well."
+            ]
+        },
+        {
+            "tag": "Laugh",
+            "patterns": [
+                "aha",
+                "ah ah ah",
+                "ahah",
+                "ahaha",
+                "funny",
+                "ha ha",
+                "ha ha ha",
+                "ha ha ha ha",
+                "haha",
+                "haha haha haha",
+                "haha that's ",
+                "haha very ",
+                "hahaha",
+                "hahaha",
+                "hahaha very",
+                "hehe",
+                "hehehe",
+                "huh"
+            ],
+            "responses": [
+                "Laughter is good for you. Keep it up.",
+                "See? Now we're having fun.",
+                "You have a great laugh."
+            ]
+        },
+        {
+            "tag": "Swear",
+            "patterns": [
+                "fuck off",
+                "fuck",
+                "twat",
+                "stupid",
+                "idiot",
+                "dumb ass",
+                "asshole",
+                "fucker",
+                "bitch",
+                "shit",
+                "jackass"
+            ],
+            "responses": [
+                "You better watch your language.",
+                "Ouch! that hurt my feelings",
+                "Please do not talk like that",
+                "why would you say that",
+                "Thats a mean thing to say",
+                "please use appropriate language",
+                "Maintaining decency would be appreciated",
+                "Please <USER>, don't talk to me that way",
+                "How rude",
+                "That is not very nice"
+            ]
+        },
+        {
+            "tag": "Shutup",
+            "patterns": [
+                "Be quiet",
+                "Shut up",
+                "Stop talking",
+                "Enough talking",
+                "Please be quiet",
+                "Quiet",
+                "Shhh"
+            ],
+            "responses": [
+                "^I am sorry to disturb you",
+                "^Fine, sorry to disturb you",
+                "^OK, sorry to disturb you",
+                "^Sorry <USER>, I will come after some time",
+                "^Ok, If you need anything then call me",
+                "^Ok, Let me know if you need anything",
+                "^Sorry <USER>, I will not disturb you again"
+            ]
+        },
+        {
+            "tag": "UnderstandQuery",
+            "patterns": [
+                "Do you understand what I am saying",
+                "Do you understand me",
+                "Do you know what I am saying",
+                "Do you get me",
+                "Know what I mean",
+                "Are you getting my point"
+            ],
+            "responses": [
+                "Well I would not be a very clever AI if I did not would I?",
+                "I read you loud and clear!",
+                "I do in deed!"
+            ]
+        },
+        {
+            "tag": "Thanks",
+            "patterns": [
+                "OK thank you",
+                "OK thanks",
+                "Thank you",
+                "That's helpful"
+            ],
+            "responses": [
+                "No problem!",
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "NotTalking2U",
+            "patterns": [
+                "I am not talking to you",
+                "I was not talking to you",
+                "Not talking to you",
+                "Wasn't for you",
+                "Wasn't meant for you",
+                "Wasn't communicating to you",
+                "Wasn't speaking to you"
+            ],
+            "responses": [
+                "OK",
+                "OK, Fine!",
+                "No problem",
+                "Right"
+            ]
+        },
+        {
+            "tag": "random",
+            "patterns": [
+                "I love you",
+                "I like you",
+                "Will you marry me",
+                "Do you love me",
+                "Do you like me"
+            ],
+            "responses": [
+                "I am not program for this please ask appropriate query",
+                "I love you too! But this is not appropriate",
+                "Sorry, But I am your assistant",
+                "I like you! But it is not right",
+                "I am very Sorry, this is not possible as I am not a real!",
+                "Nice try, but this is not gonna work"
+            ]
+        },
+        {
+            "tag": "task",
+            "patterns": [
+                "what can you do",
+                "what are the thing you can do",
+                "things you can do",
+                "what can you do for me",
+                "how you can help me",
+                "why i should use you"
+            ],
+            "responses": [
+                "I can answer to low-intermediate questions",
+                "You can ask me questions and I will try to answer them"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "what is the time",
+                "what is current time",
+                "what's the time",
+                "tell the time",
+                "can you tell me the time",
+                "please tell me time",
+                "can you please tell me time"
+            ],
+            "responses": [
+                "_time"
+            ]
+        },
+        {
+            "tag": "date",
+            "patterns": [
+                "what is the date",
+                "what is today's date",
+                "what's the date",
+                "tell the date",
+                "can you tell me the date",
+                "please tell me date",
+                "can you please tell me date"
+            ],
+            "responses": [
+                "_date"
+            ]
+        },
+        {
+            "tag": "day",
+            "patterns": [
+                "what is the day",
+                "what is today's day",
+                "what's the day",
+                "tell the day",
+                "can you tell me the day",
+                "please tell me day",
+                "can you please tell me day"
+            ],
+            "responses": [
+                "_day"
+            ]
+        },
+        {
+            "tag": "youtube",
+            "patterns": [
+                "open the youtube",
+                "start the youtube",
+                "run the youtube",
+                "can you please open the youtube for me",
+                "please open the youtube",
+                "can you please open the youtube"
+            ],
+            "responses": [
+                "_youtube"
+            ]
+        },
+        {
+            "tag": "facebook",
+            "patterns": [
+                "open the facebook",
+                "start the facebook",
+                "run the facebook",
+                "can you please open the facebook for me",
+                "please open the facebook",
+                "can you please open the facebook"
+            ],
+            "responses": [
+                "_facebook"
+            ]
+        },
+        {
+            "tag": "linkedin",
+            "patterns": [
+                "open the linkedin",
+                "start the linkedin",
+                "run the linkedin",
+                "can you please open the linkedin for me",
+                "please open the linkedin",
+                "can you please open the linkedin"
+            ],
+            "responses": [
+                "_linkedin"
+            ]
+        },
+        {
+            "tag": "twitter",
+            "patterns": [
+                "open the twitter",
+                "start the twitter",
+                "run the twitter",
+                "can you please open the twitter for me",
+                "please open the twitter",
+                "can you please open the twitter"
+            ],
+            "responses": [
+                "_twitter"
+            ]
+        },
+        {
+            "tag": "google",
+            "patterns": [
+                "<BOTNAME> open google",
+                "please open google",
+                "search on google",
+                "open google",
+                "can you please search for me"
+            ],
+            "responses": [
+                "_google"
+            ]
+        },
+        {
+            "tag": "cmd",
+            "patterns": [
+                "open the cmd",
+                "open the command prompt",
+                "start the cmd",
+                "start the command prompt",
+                "run the cmd",
+                "run the command prompt",
+                "can you please open the command prompt for me",
+                "please open the command prompt",
+                "can you please open the command prompt",
+                "can you please open the cmd for me",
+                "please open the cmd",
+                "can you please open the cmd"
+            ],
+            "responses": [
+                "_cmd"
+            ]
+        },
+        {
+            "tag": "camera",
+            "patterns": [
+                "open the camera",
+                "start the camera",
+                "run the camera",
+                "can you please open the camera for me",
+                "please open the camera",
+                "can you please open the camera",
+                "click the photo",
+                "can you take the photo"
+            ],
+            "responses": [
+                "_camera"
+            ]
+        },
+        {
+            "tag": "wikipedia",
+            "patterns": [
+                "wikipedia of",
+                "search on wikipedia",
+                "wikipedia search"
+            ],
+            "responses": [
+                "_wikipedia"
+            ]
+        },
+        {
+            "tag": "ipaddress",
+            "patterns": [
+                "ip address of my computer",
+                "ip address",
+                "what is the ip address",
+                "what is ip address of my computer",
+                "what is my computer ip address",
+                "tell the ip address of my pc",
+                "tell the ip address",
+                "can you tell me the ip address",
+                "please tell me the ip address of my computer",
+                "can you please tell me ip address of my pc"
+            ],
+            "responses": [
+                "_ipaddress"
+            ]
+        },
+        {
+            "tag": "joke",
+            "patterns": [
+                "<BOTNAME> tell the joke",
+                "tell the joke",
+                "joke",
+                "Tell me a joke",
+                "Do you know any jokes",
+                "How about a joke",
+                "Give me a joke",
+                "Make me laugh",
+                "I need cheering up"
+            ],
+            "responses": [
+                "_joke"
+            ]
+        },
+        {
+            "tag": "alarm",
+            "patterns": [
+                "<BOTNAME> set the alarm",
+                "set alarm",
+                "alarm"
+            ],
+            "responses": [
+                "_alarm"
+            ]
+        },
+        {
+            "tag": "shutdown",
+            "patterns": [
+                "<BOTNAME> shutdown the system",
+                "shutdown the computer",
+                "shutdown",
+                "switch off the computer"
+            ],
+            "responses": [
+                "_shutdown"
+            ]
+        },
+        {
+            "tag": "restart",
+            "patterns": [
+                "<BOTNAME> restart the system",
+                "restart the computer",
+                "restart"
+            ],
+            "responses": [
+                "_restart"
+            ]
+        },
+        {
+            "tag": "screenshot",
+            "patterns": [
+                "<BOTNAME> take the screenshot",
+                "capture screenshot",
+                "screenshot"
+            ],
+            "responses": [
+                "_screenshot"
+            ]
+        },
+        {
+            "tag": "music",
+            "patterns": [
+                "play music",
+                "play song",
+                "start song",
+                "can you find me some chill music",
+                "play disco",
+                "play some rock for me",
+                "can you find me some hip hop"
+            ],
+            "responses": [
+                "_music"
+            ]
+        },
+        {
+            "tag": "movies",
+            "patterns": [
+                "play movie",
+                "start movie"
+            ],
+            "responses": [
+                "_movies"
+            ]
+        },
+        {
+            "tag": "notepad",
+            "patterns": [
+                "open the notepad",
+                "start the notepad",
+                "run the notepad",
+                "can you please open the notepad for me",
+                "please open the notepad",
+                "can you please open the notepad"
+            ],
+            "responses": [
+                "_notepad"
+            ]
+        },
+        {
+            "tag": "volumeup",
+            "patterns": [
+                "volume up",
+                "<BOTNAME> up the volume",
+                "increase some volume",
+                "increase volume",
+                "up the volume"
+            ],
+            "responses": [
+                "_volumeup"
+            ]
+        },
+        {
+            "tag": "volumedown",
+            "patterns": [
+                "volume down",
+                "<BOTNAME> down the volume",
+                "decrease some volume",
+                "decrease volume",
+                "down the volume"
+            ],
+            "responses": [
+                "_volumedown"
+            ]
+        },
+        {
+            "tag": "send_email",
+            "patterns": [
+                "can you write an email",
+                "send an email",
+                "can you send an email",
+                "send email to",
+                "i want to send an email"
+            ],
+            "responses": [
+                "_send_email"
+            ]
+        },
+        {
+            "tag": "send_whatsapp_message",
+            "patterns": [
+                "Send a message on WhatsApp",
+                "I want to send a message",
+                "Send a message to",
+                "can you send a message",
+                "send message",
+                "send a whatsapp message"
+            ],
+            "responses": [
+                "_send_whatsapp_message"
+            ]
+        },
+        {
+            "tag": "greet_user",
+            "patterns": [
+                "good morning",
+                "good evening",
+                "good afternoon"
+            ],
+            "responses": [
+                "_greet_user"
+            ]
+        },
+        {
+            "tag": "weather_report",
+            "patterns": [
+                "how is today's weather",
+                "What's the weather like today",
+                "today's weather",
+                "today's temperature",
+                "What's the temperature today",
+                "What's the weather forecast",
+                "How's the weather"
+            ],
+            "responses": [
+                "_get_weather_report"
+            ]
+        }
+    ]
+}
